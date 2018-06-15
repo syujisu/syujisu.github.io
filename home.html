@@ -1,0 +1,156 @@
+<html>
+<head>
+<title>home</title>
+<meta charset="utf-8">
+<meta name=viewport content="width=device-width, initial-scale=1, user-scalable=0">
+<style type="text/css">
+* { }
+body {
+   margin: 0 auto ;
+   background-color: white;
+}
+.section {
+   float: left;
+   width: 100%;
+} 
+
+
+.main-img{
+   display: block;
+   margin:  100px auto 0;
+   width: 300px;
+   height: 150px;
+  margin-top: 0px;
+}
+
+/* content  */
+.content{
+  margin-top: 55px;
+  border : 1px solid;
+  width : 300px;
+  padding  : 10px;
+  margin-left : 47px;
+}
+
+.content img{
+  width : 200px;
+  display:inline-block;
+}
+
+.content p{
+  margin : 0px;
+}
+
+.content .content-txt{
+  float:right;
+  padding-top : 60px;
+ 
+}
+
+.content .content-txt .title {
+  font-weight : 800;
+  font-size : 18px;
+}
+
+.content .content-txt .won{
+  text-align : center;
+}
+/* 컨텐트 끝 */
+
+.btns{
+  margin-top : 30px;
+  margin-left : 90px;
+}
+
+.btn{
+
+    font-size: 20px;
+    background-color: #073283;
+    border-radius: 10px;
+    width: 120px;
+    height: 50px;
+    color: white;
+}
+
+.events{
+
+    width: 370px;
+    margin-left: 20px;
+    margin-top: 120px;
+    margin-bottom: 20px;
+
+}
+</style>
+<link rel="stylesheet" href="header.css">
+</head>
+<body>
+  <section style='position : fixed; top : 0px; background-color : white;'>
+    <div id="header-area" class="section" style="height: 50px;">
+      <ul class="header-bar">
+        <li>
+          <a href="home.html">
+            <img class='menu' src='images/menu.png'/>
+          </a>
+        </li>
+        <li>
+          <img class='logo' src='images/logo-cutout.png'/>
+        </li>
+        <li style='float : right;'>
+          <a href="barcode.html">
+            <img class='barcode' src='images/bcode.png'/>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <div class='content'>
+    <img src='images/item.jpg'/>
+    <span class='content-txt'>
+        <p class='title'>구운 카레빵</p>
+        <p class='won'>1,000 won</p>
+    </span>
+    
+  </div>
+  <div class='btns'>
+    <div class='row'>
+      <button class='btn' type='button' onclick='go(0)'>
+        메뉴
+      </button>
+      <button class='btn' type='button' onclick='go(1)'>
+        매장 찾기
+      </button>
+    </div>
+    <div class='row'>
+      <button class='btn' type='button' onclick='go(2)'>
+        후기
+      </button>
+      <button class='btn' type='button' onclick='go(3)'>
+        이벤트 
+      </button>
+    </div>
+  </div>
+  <div class='events'>
+    <img style='width : 100%;' src='images/events.jpeg'/>
+  </div>
+  
+  <script>
+    function go(type){
+      switch (type){
+        case 0 : 
+          location.href='menu.html'
+        break;
+        case 1 : 
+          location.href='https://m.map.naver.com/search2/search.nhn?query=%EB%85%B8%EC%9B%90%EA%B5%AC%20%ED%8C%8C%EB%A6%AC%EB%B0%94%EA%B2%8C%ED%8A%B8&sm=hty'
+        break;
+        case 2 : 
+          location.href='review.html'
+        break;
+        case 3 : 
+          location.href='event.html'
+        break;
+      }
+    }
+  </script>
+
+</body>
+</html>

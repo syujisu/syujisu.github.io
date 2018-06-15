@@ -1,0 +1,198 @@
+<html>
+    <head>
+        <title>item</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+        <style type="text/css">
+        * { }
+        body {
+           margin: 0 auto ;
+           background-color: white;
+        }
+        .section {
+           float: left;
+           width: 100%;
+        } 
+        
+        #menu-area ul {
+           padding: 50px;
+           text-align: center;
+           font-size: 30px;
+           
+        }
+        #menu-area li {
+           padding: 30px 0px;
+           list-style: none;
+           font-size: 4em;
+        }
+        #menu-area ul {
+           padding-top: 220px;
+           padding-bottom: 0;
+           }
+        .main-img{
+           display: block;
+           margin:  100px auto 0;
+           width: 300px;
+           height: 450px;
+          margin-top: 100px;
+        }
+        .content {
+            margin-top : 55px;
+        }
+.btns{
+  margin-top : 30px;
+  margin-left : 20px;
+}
+
+.btn{
+
+    font-size: 25px;
+    background-color: #073283;
+    border-radius: 10px;
+    width: 185px;
+    height: 50px;
+    color: white;
+}
+
+.btn.clicked{
+    background-color: white;
+    border: 1px solid #073283;
+    color: #073283;
+    font-weight: 800;
+}
+
+.search {
+    margin-top : 20px;
+    margin-bottom : 10px;
+}
+.search .icon{
+    position: absolute;
+    width: 24px;
+    right: 120px;
+    margin-top: 9px;
+}
+
+.search .search-txt{
+    width : 280px;
+    padding : 3px 10px; 
+    border : 1px solid;
+    border-radius: 10px;
+    font-size : 25px;
+    margin-left : 25px; 
+    margin-right: 10px;
+}
+
+.search p {
+    display:inline-block;
+}
+img {
+    width : 100%;
+}
+
+.items{
+    margin-left : 21px;
+}
+.item{
+    width : 185px;
+    display:inline-block;
+}
+.tbl {
+    width: 350px;
+    font-size: 22px;
+    margin-left:35px;
+    background-color: #073283;
+    border-radius: 10px;
+    color: white;
+    margin-right: 20px;
+}
+        </style>
+        <!-- menu  -->
+        <link rel="stylesheet" href="header.css">
+        </head>
+        <body style="height: auto;">
+            <section style='position : fixed; top : 0px; background-color : white;'>
+                <div id="header-area" class="section" style="height: 50px;">
+                    <ul class="header-bar">
+                    <li>
+                        <a href="home.html">
+                        <img class='menu' src='images/menu.png'/>
+                        </a>
+                    </li>
+                    <li>
+                        <img class='logo' src='images/logo-cutout.png'/>
+                    </li>
+                    <li style='float : right;'>
+                        <a href="barcode.html">
+                        <img class='barcode' src='images/bcode.png'/>
+                        </a>
+                    </li>
+                    </ul>
+                </div>
+            </section>
+            <div class='content'>
+                <div class='btns'>
+                    <div class='row'>
+                        <button class='btn clicked' type='button' onclick='go(0)'>
+                        빵
+                        </button>
+                        <button class='btn' type='button' onclick='go(1)'>
+                        샌드위치
+                        </button>
+                    </div>
+                    <div class='row'>
+                        <button class='btn' type='button' onclick='go(2)'>
+                        케익
+                        </button>
+                        <button class='btn' type='button' onclick='go(3)'>
+                        음료수  
+                        </button>
+                    </div>
+                </div>
+                <div class="item" style="
+    width: 100%;
+">
+                    <img class="itm-img" src="images/bread1.jpeg" style="
+    display: inline-block;
+    width: 237px;
+">
+                    <p style="
+    display: inline-block;
+    padding-top: 39px;
+    word-break: break-all;
+    width: 134px;
+    height: 165px;
+    overflow-y: scroll;
+">
+                        짬뽕의 맛을 입안 가득 느낄 수 있는 중화요리 시리즈 1탄 짬뽕고로케 
+                    </p>
+                </div>
+                <div>
+                    <table class="tbl">
+                        <tr>
+                            <th>
+                                총중량
+                            </th>
+                            <td>100</td>
+                        </tr>
+                        <tr>
+                            <th>
+                                1회 제공량
+                            </th>
+                            <td>100</td>
+                        </tr>
+                        <tr>
+                            <th>
+                                칼로리
+                            </th>
+                            <td>320</td>
+                        </tr>
+                    </table>
+
+                </div>
+            </div>
+    <script>
+        function go(){
+            location.href='item.html'
+        }
+    </script>
+    </body></html>
